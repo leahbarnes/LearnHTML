@@ -4,17 +4,21 @@
 
 <head>
     <title>My First Website</title>
-    <meta name="description" content="Learning HTML">
-    <meta name="keywords" content="HTML, turotial, beginners">
-    <meta name="author" content="Leah Barnes">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="30">
 </head>
 <body>
     
+    <!-- The doSomething function changes the hello text to read goodbye.-->
 
+    <button onclick="doSomething()" style="background-color: #DCA6FF; border-radius: 5px;">Leah's LinkedIn</button>
     
+    <p id="test">Hello</p>
+
+    <script>
+        function doSomething(){
+            document.getElementById("test").innerHTML = "Goodbye";
+        }
+    </script>
+
 </body>
 
 </html>
