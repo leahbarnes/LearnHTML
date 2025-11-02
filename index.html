@@ -7,17 +7,95 @@
 </head>
 <body>
     
-    <!-- The doSomething function changes the hello text to read goodbye.-->
+    <form action="action_page.php" method="POST">
+        <div>
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
+        </div>
 
-    <button onclick="doSomething()" style="background-color: #DCA6FF; border-radius: 5px;">Leah's LinkedIn</button>
-    
-    <p id="test">Hello</p>
+        <br>    
 
-    <script>
-        function doSomething(){
-            document.getElementById("test").innerHTML = "Goodbye";
-        }
-    </script>
+        <div>
+        <label for="lname">Last name</label>
+        <input type="text" id="lname" name="lname" placeholder="Squarepants" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="pass">password:</label>
+            <input type="password" id="pass" name="pass" maxlength="12" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phone">phone #:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="bdate">Birthdate:</label>
+            <input type="date" id="bdate" name="bdate" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="quantity">quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+        </div>
+
+        <br>
+
+        <label>Mr.</label>
+        <input type="radio" name="title">
+
+        <label>Mrs.</label>
+        <input type="radio" name="title">
+
+        <label>PhD.</label>
+        <input type="radio" name="title">
+
+        <br>
+
+        <label for="payment">payment</label>
+        <select id="payment" name="payment">
+            <option>visa</option>
+            <option>mastercard</option>
+            <option>giftcard</option>
+
+        </select>
+
+        <br>
+
+        <div>
+            <label for="cookie">cookie:</label>
+            <input type="checkbox" id="cookie" name="cookie" >
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
 
 </body>
 
